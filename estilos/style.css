@@ -1,9 +1,54 @@
 @charset "UTF-8";
 
 :root {
-    --cor1: #00141F;
-    --cor2: #011F26;
+    --cor1: #000d14;
+    --cor2: #001025;
     --cor3: #FBA500;
     --cor4: #F27405;
     --cor5: #D93D04;
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    width: 300px;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.644);
+    transition: width .8s, height .8s;
+}
+
+section#login > div#img {
+    background: #000d14 url(../imagens/background-pex.jpg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 220px;
+}
+
+section#login > div#form {
+    display: block;
+    padding: 10px;
 }
