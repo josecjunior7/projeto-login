@@ -31,7 +31,7 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden;
     background-color: white;
     width: 300px;
@@ -39,6 +39,7 @@ section#login {
     border-radius: 15px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.644);
     transition: width .8s, height .8s;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#img {
@@ -87,10 +88,11 @@ div.field > input {
     font-size: 1em;
     width: calc(100% - 44.7px);
     height: 100%;
-    transform: translateY(-4.5px);
+    
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-4.7px);
 }
 
 div.field > input:hover {
